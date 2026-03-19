@@ -34,4 +34,4 @@ En cada iteración, el error disminuye considerablemente, lo que permite obtener
 Asimismo, se puede concluir que el método de Newton-Raphson es especialmente útil para resolver ecuaciones trascendentales, como en este caso, donde no es posible encontrar una solución exacta de forma algebraica. 
 Sin embargo, también es importante considerar que el éxito del método depende de una buena elección del punto inicial y de que la función sea derivable en el intervalo de interés.
 
-
+ 

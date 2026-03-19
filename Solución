@@ -1,0 +1,37 @@
+Código:
+
+import math  
+
+# Definir la función  
+def f(x):  
+    return x - math.exp(-x)  
+
+# Derivada  
+def df(x):  
+    return 1 + math.exp(-x)  
+
+# Método de Newton-Raphson  
+x = 1  # valor inicial cambiado a 1
+tolerancia = 0.001  
+error = 1  
+
+while error > tolerancia:  
+    x_nuevo = x - f(x)/df(x)  
+    error = abs(x_nuevo - x)  
+    x = x_nuevo  
+    print("x:", x)  
+
+print("\nSolución aproximada:", x)
+
+Conclusiones:
+
+El método de Newton-Raphson demostró ser una herramienta muy eficiente para resolver la ecuación no lineal x = e^(-x).
+A partir de la transformación de la ecuación a la forma f(x) = x - e^(-x), fue posible aplicar el procedimiento iterativo utilizando su derivada 
+f'(x) = 1 + e^(-x). Tomando como valor inicial x0​=1, se obtuvo una rápida convergencia hacia la solución, alcanzando el valor aproximado 
+x ≈ 0.5671 en pocas iteraciones. Este resultado evidencia una de las principales ventajas del método: su alta velocidad de convergencia cuando se parte de un valor inicial cercano a la raíz. 
+En cada iteración, el error disminuye considerablemente, lo que permite obtener una solución precisa con un número reducido de pasos.
+
+Asimismo, se puede concluir que el método de Newton-Raphson es especialmente útil para resolver ecuaciones trascendentales, como en este caso, donde no es posible encontrar una solución exacta de forma algebraica. 
+Sin embargo, también es importante considerar que el éxito del método depende de una buena elección del punto inicial y de que la función sea derivable en el intervalo de interés.
+
+

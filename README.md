@@ -1,5 +1,4 @@
 # Metodos Númericos - Actividad
 
 Presentada por : 
-David Vargas 
-Moisés Baquero
+David Vargas y Moisés Baquero
